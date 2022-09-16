@@ -5,27 +5,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primaryLight"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/applicationForm"
         android:layout_width="@dimen/textViewWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="377dp"
-        android:text="TextView" />
+        android:layout_marginTop="@dimen/screenMargin"
+        android:background="@color/primaryDark"
+        android:gravity="center"
+        android:text="Application Form" />
 
     <EditText
         android:id="@+id/date"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="50dp"
+        android:layout_below="@+id/applicationForm"
+        android:layout_marginLeft="@dimen/leftMargin"
+        android:layout_marginRight="@dimen/rightMargin"
+        android:layout_toRightOf="@id/name"
+        android:background="@color/primaryDark"
+        android:layout_marginTop="@dimen/screenMargin"
         android:ems="10"
         android:inputType="date" />
 
@@ -33,10 +35,11 @@
         android:id="@+id/email"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="194dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="@dimen/leftMargin"
+        android:layout_marginTop="@dimen/screenMargin"
+        android:layout_marginRight="@dimen/rightMargin"
+        android:background="@color/primaryDark"
         android:ems="10"
         android:inputType="textEmailAddress" />
 
@@ -44,9 +47,12 @@
         android:id="@+id/postalAddress"
         android:layout_width="@dimen/editTextWidth"
         android:layout_height="@dimen/editTextHeight"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="38dp"
+        android:layout_below="@id/date"
+        android:layout_marginLeft="@dimen/leftMargin"
+        android:layout_marginTop="@dimen/screenMargin"
+        android:layout_marginRight="@dimen/rightMargin"
+        android:layout_toRightOf="@+id/email"
+        android:background="@color/primaryDark"
         android:ems="10"
         android:inputType="textPostalAddress" />
 
@@ -54,12 +60,21 @@
         android:id="@+id/sendButton"
         android:layout_width="@dimen/buttonWidth"
         android:layout_height="@dimen/buttonHeight"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="160dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginTop="@dimen/buttonMarginTop"
         android:text="Send" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_below="@+id/applicationForm"
+        android:layout_marginLeft="@dimen/leftMargin"
+        android:layout_marginTop="@dimen/editTextMarginTop"
+        android:layout_marginRight="@dimen/rightMargin"
+        android:background="@color/primaryDark"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
 
 </RelativeLayout>

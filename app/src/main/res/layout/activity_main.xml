@@ -10,71 +10,49 @@
 
     <TextView
         android:id="@+id/applicationForm"
-        android:layout_width="@dimen/textViewWidth"
-        android:layout_height="@dimen/editTextHeight"
+        style="@style/TextViewProperties"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/screenMargin"
-        android:background="@color/primaryDark"
-        android:gravity="center"
         android:text="Application Form" />
 
     <EditText
         android:id="@+id/date"
-        android:layout_width="@dimen/editTextWidth"
-        android:layout_height="@dimen/editTextHeight"
+        style="@style/EditTextProperties"
         android:layout_below="@+id/applicationForm"
-        android:layout_marginLeft="@dimen/leftMargin"
-        android:layout_marginRight="@dimen/rightMargin"
         android:layout_toRightOf="@id/name"
-        android:background="@color/primaryDark"
-        android:layout_marginTop="@dimen/screenMargin"
         android:ems="10"
+        android:hint="Date"
         android:inputType="date" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="@dimen/editTextWidth"
-        android:layout_height="@dimen/editTextHeight"
+        style="@style/EditTextProperties"
         android:layout_below="@+id/name"
-        android:layout_marginLeft="@dimen/leftMargin"
-        android:layout_marginTop="@dimen/screenMargin"
-        android:layout_marginRight="@dimen/rightMargin"
-        android:background="@color/primaryDark"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/postalAddress"
-        android:layout_width="@dimen/editTextWidth"
-        android:layout_height="@dimen/editTextHeight"
+        style="@style/EditTextProperties"
         android:layout_below="@id/date"
-        android:layout_marginLeft="@dimen/leftMargin"
-        android:layout_marginTop="@dimen/screenMargin"
-        android:layout_marginRight="@dimen/rightMargin"
         android:layout_toRightOf="@+id/email"
-        android:background="@color/primaryDark"
         android:ems="10"
+        android:hint="Address"
         android:inputType="textPostalAddress" />
 
     <Button
         android:id="@+id/sendButton"
-        android:layout_width="@dimen/buttonWidth"
-        android:layout_height="@dimen/buttonHeight"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/buttonMarginTop"
-        android:text="Send" />
+        android:layout_below="@+id/applicationForm"
+        android:text="Send"
+        style="@style/ButtonProperties"/>
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="@dimen/editTextWidth"
-        android:layout_height="@dimen/editTextHeight"
+        style="@style/EditTextProperties"
         android:layout_below="@+id/applicationForm"
-        android:layout_marginLeft="@dimen/leftMargin"
-        android:layout_marginTop="@dimen/editTextMarginTop"
-        android:layout_marginRight="@dimen/rightMargin"
-        android:background="@color/primaryDark"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName" />
-
 
 </RelativeLayout>

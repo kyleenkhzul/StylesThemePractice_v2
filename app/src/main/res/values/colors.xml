@@ -8,4 +8,5 @@
     <color name="secondaryDark">#49599a</color>
     <color name="whiteText">#FFFFFF</color>
     <color name="blackText">#000000</color>
+    <color name="greyText">#B2BEB5</color>
 </resources>

@@ -20,7 +20,7 @@
     <dimen name="screenMargin">50dp</dimen>
 
     <dimen name="textPaddingLeft">10sp</dimen>
-    <dimen name="textPaddingTop">15sp</dimen>
+    <dimen name="textPaddingTop">5sp</dimen>
 
 
 </resources>

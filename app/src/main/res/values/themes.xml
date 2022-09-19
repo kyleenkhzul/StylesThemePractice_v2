@@ -1,14 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    // Blue Application Theme
+    <!-- // Blue Application Theme -->
     <style name="Theme.StylesThemeBlue" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primaryDark</item>
-        <item name="colorPrimaryVariant">@color/primaryColor</item>
+        <item name="colorPrimary">@color/blueDark</item>
+        <item name="colorPrimaryVariant">@color/blueColor</item>
         <item name="colorOnPrimary">@color/whiteText</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/secondaryDark</item>
-        <item name="colorSecondaryVariant">@color/secondaryColor</item>
+        <item name="colorSecondary">@color/secondBlueDark</item>
+        <item name="colorSecondaryVariant">@color/secondBlue</item>
         <item name="colorOnSecondary">@color/whiteText</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
@@ -18,25 +18,9 @@
         <item name="buttonStyle">@style/ButtonProperties</item>
     </style>
 
-    // Purple application theme
-    <style name="Theme.StylesThemeLightPurple" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primaryDark</item>
-        <item name="colorPrimaryVariant">@color/primaryColor</item>
-        <item name="colorOnPrimary">@color/blackText</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/secondaryDark</item>
-        <item name="colorSecondaryVariant">@color/secondaryColor</item>
-        <item name="colorOnSecondary">@color/blackText</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
-        <!-- Customize your theme here. -->
-    </style>
-
-
     // different properties for editText, textView, and button
-    <style name="EditTextProperties" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="android:background">@color/primaryDark</item>
+    <style name="EditTextProperties" parent="android:style/Widget.EditText">
+        <item name="android:background">@color/blueDark</item>
         <item name="android:textColor">@color/whiteText</item>
         <item name="android:layout_marginLeft">@dimen/leftMargin</item>
         <item name="android:layout_marginRight">@dimen/rightMargin</item>
@@ -48,8 +32,8 @@
         <item name="android:textColorHint">@color/greyText</item>
     </style>
 
-    <style name="TextViewProperties" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="android:background">@color/primaryDark</item>
+    <style name="TextViewProperties" parent="android:style/Widget.TextView">
+        <item name="android:background">@color/blueDark</item>
         <item name="android:layout_width">@dimen/textViewWidth</item>
         <item name="android:layout_height">@dimen/textViewHeight</item>
         <item name="android:layout_centerHorizontal">true</item>
@@ -59,13 +43,13 @@
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="ButtonProperties" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="ButtonProperties" parent="android:style/Widget.Button">
         <item name="android:layout_width">@dimen/buttonWidth</item>
         <item name="android:layout_height">@dimen/buttonHeight</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">@dimen/buttonMarginTop</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColorHint">@color/whiteText</item>
+        <item name="android:textColor">@color/whiteText</item>
     </style>
 
 </resources>

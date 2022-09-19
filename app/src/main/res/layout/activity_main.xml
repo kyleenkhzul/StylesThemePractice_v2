@@ -5,15 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryLight"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/applicationForm"
         style="@style/TextViewProperties"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:text="Application Form" />
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/EditTextProperties"
+        android:layout_below="@+id/applicationForm"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/date"
@@ -43,16 +48,10 @@
 
     <Button
         android:id="@+id/sendButton"
+        style="@style/ButtonProperties"
         android:layout_below="@+id/applicationForm"
-        android:text="Send"
-        style="@style/ButtonProperties"/>
+        android:onClick="switchScreens"
+        android:text="Send" />
 
-    <EditText
-        android:id="@+id/name"
-        style="@style/EditTextProperties"
-        android:layout_below="@+id/applicationForm"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName" />
 
 </RelativeLayout>
